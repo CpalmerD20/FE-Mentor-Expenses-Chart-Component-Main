@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <span class="label">My balance</span>
+        <img class="logo" src="./images/logo.svg" alt="" role="presentation">
+        <div class="balance amount">$921.48</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+
+        <h1>Spending - Last 7 days</h1>
+        <ul class="weekly-chart">
+          <li class="monday">
+            <div class="popup p0">?</div>
+            <div class="bar mon"></div>
+            mon
+          </li>
+          <li class="tuesday">
+            <div class="popup p1">?</div>
+            <div class="bar tue"></div>
+            tue
+          </li>
+          <li class="wednesday">
+            <div class="popup p2">?</div>
+            <div class="bar wed"></div>
+            wed
+          </li>
+          <li class="thursday">
+            <div class="popup p3">?</div>
+            <div class="bar thu"></div>
+            thu
+          </li>
+          <li class="friday">
+            <div class="popup p4">?</div>
+            <div class="bar fri"></div>
+            fri
+          </li>
+          <li class="saturday">
+            <div class="popup p5">?</div>
+            <div class="bar sat"></div>
+            sat
+          </li>
+          <li class="sunday">
+            <div class="popup p6">?</div>
+            <div class="bar sun"></div>
+            sun
+          </li>
+        </ul>
+        <hr>
+        <footer>
+          <section class="monthly-total">
+            <h2>Total this month</h2>
+            <span class="month amount total">$478.33</span>
+          </section>
+          <section class="percent-change">
+            <span class="month amount change">+2.4%</span>
+            <div>from last month</div>
+          </section>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
