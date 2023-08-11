@@ -1,7 +1,7 @@
 
-const url = "./data.json";
-
 async function getWeeklyData() {
+  const US_DOLLARS = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+  const url = "./data.json";
   const reply = await fetch(url);
   const weeklySpending = await reply.json(); /*array of objects*/
 
@@ -17,8 +17,8 @@ async function getWeeklyData() {
 
   weeklySpending.forEach((obj, idx) => {
     const element = document.querySelector(`.${obj["day"]}`);
-    element.style.height = `${100 * obj["amount"] / maxSpent}px`;
-    document.querySelector(`.p${idx}`).textContent = "$" + obj["amount"];
+    element.style.height = `${200 * obj["amount"] / maxSpent}px`;
+    document.querySelector(`.p${idx}`).textContent = "" + US_DOLLARS.format(obj["amount"]);
   })
   document.querySelector(`.${maxDay}`).classList.add('max');
 }
