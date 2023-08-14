@@ -17,7 +17,7 @@ async function getWeeklyData() {
 
   weeklySpending.forEach((obj, idx) => {
     const element = document.querySelector(`.${obj["day"]}`);
-    element.style.height = `${200 * obj["amount"] / maxSpent}px`;
+    element.style.height = `${150 * obj["amount"] / maxSpent}px`;
     document.querySelector(`.p${idx}`).textContent = "" + US_DOLLARS.format(obj["amount"]);
   })
   document.querySelector(`.${maxDay}`).classList.add('max');

@@ -16,20 +16,22 @@
   --pale-orange: hsl(33, 100%, 98%);
 }
 
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 18px;
   background: var(--cream);
 }
 
+.font-large {
+  font-size: 1.5rem;
+}
+
 .container {
   margin: auto;
-  background: grey;
-  width: 375px;
   display: grid;
   align-items: center;
   justify-content: center;
-  /* height: 100%; */
 }
 
 header {
@@ -38,7 +40,7 @@ header {
   padding: 5% 5%;
   height: 100px;
   width: 360px;
-  margin-top: 10%;
+  margin-top: 10px;
   margin-bottom: 5%;
   font-size: 1.5rem;
 }
@@ -50,22 +52,22 @@ header {
 
 .logo {
   float: right;
-  margin-top: 4%;
+  margin-top: 5px;
 }
 
 main {
   background: var(--pale-orange);
-  height: 580px;
+  height: 420px;
   color: var(--medium-brown);
+  padding: 5px;
 }
 
 .wrapper {
-  padding: 5%;
+  padding: 5px;
 }
 
 h1 {
-  margin-top: 3%;
-  font-size: 1.5rem;
+  margin-top: 5px;
   color: var(--dark-brown);
 }
 
@@ -78,12 +80,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  height: 300px;
-  margin-bottom: 10%;
+  height: 240px;
+  margin-bottom: 20px;
 }
 
 li {
-  /* height: 90%; */
   text-align: center;
   margin: 0px 5px;
   text-decoration: none;
@@ -93,8 +94,8 @@ li {
 
 .popup {
   position: fixed;
-  padding: 5px;
-  transform: translate(-2px, -25px);
+  padding: 2px 4px;
+  transform: translate(-5px, -25px);
   border-radius: 2px;
   background: var(--dark-brown);
   color: var(--cream);
@@ -132,14 +133,13 @@ li:hover .bar {
 
 hr {
   color: var(--cream);
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 
 footer {
   display: flex;
   align-items: end;
-  margin-top: 8%;
-  padding: 10% 0%;
+  padding: 10px 0%;
 }
 
 .monthly-total {
@@ -153,7 +153,7 @@ footer {
 h2 {
   font-weight: 300;
   font-size: 1rem;
-  margin-bottom: 5%;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -177,16 +177,46 @@ footer {
 @media screen and (min-width: 600px) {
 
   .container {
-    width: 600px;
+    width: 620px;
   }
 
   header {
     width: 500px;
+    border-radius: 15px;
   }
 
-  h1 {
+  .balance {
+    font-size: 1.6rem;
+  }
+
+  main {
+    width: 500px;
+    height: 480px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .font-large {
     font-size: 2rem;
   }
 
+  li {
+    width: 50px;
+  }
+
+  .bar {
+    border-radius: 6px;
+  }
+
+  .popup {
+    font-size: 1rem;
+    padding: 3px 5px;
+    height: 25px;
+    transform: translate(-4px, -30px);
+  }
+
+  .total {
+    font-size: 3rem;
+  }
 
 }
